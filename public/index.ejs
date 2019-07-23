@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title> GitHub OAuth Demo </title>
+        <link rel="stylesheet" type="text/css" href="/styles.css">
+    </head>
+    <body class="vertical">
+        <div class="card">
+            <div class="vertical">
+                <h2> GitHub OAuth Demo </h2>
+                <% if (user.name) {  %>
+                    <h3> Welcome <%= user.name %>  </h3>
+                    <h4> <%=user.data.bio%>  </h4>
+                    <span>Following: <%=user.data.following%></span>
+                    <span>Followers: <%=user.data.followers%></span>
+                    <a href="/logout"> Logout </a>
+                <% } else { %>
+                    <a href="/login"> Login </a>
+                <% } %>
+            </div>
+        </div>
+    </body>
+</html>

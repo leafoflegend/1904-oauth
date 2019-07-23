@@ -1,0 +1,21 @@
+.vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card {
+    padding: 1em;
+    border: solid 5px darkslateblue;
+    border-radius: 10%;
+    display: inline-block;
+    max-width: 500px;
+}
